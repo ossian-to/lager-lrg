@@ -1,0 +1,234 @@
+@media only screen and (min-width: 0) {
+  label.switch-open + input[type=checkbox]:checked ~ .nav-bar {
+    overflow: hidden;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+  }
+  label.switch-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2em;
+    width: 50px;
+    height: 50px;
+    background-color: #FF9900;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .nav-bar {
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 100vh;
+    transition: width 0.3s ease;
+  }
+  .nav-bar .nav-container {
+    display: unset;
+    align-items: unset;
+  }
+  ul.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul.nav li {
+    margin-right: unset;
+    width: 100%;
+  }
+  ul.nav li a {
+    padding: 0 0 0.75em 0;
+  }
+  .lager-english-name {
+    display: block;
+  }
+  ul.reward {
+    flex-wrap: wrap;
+    gap: initial;
+    li {
+      width: 100%;
+    }
+  }
+  .event-1-kv{
+    article{
+      picture.event-1-title{
+        source,
+        img{
+          width: 100%;
+          max-width: 456px;
+        }
+      }
+    }
+    .obj{
+      bottom: unset;
+    }
+    // 撲克牌士兵
+    .obj-1{
+      display: none;
+      left: unset;
+    }
+    // 精靈男
+    .obj-2{
+      display: none;
+      left: calc(50% - 420px);
+    }
+    // 愛麗絲
+    .obj-3{
+      bottom: 7em;
+      left: calc(50% - 180px);
+    }
+    // 沙拉醬
+    .obj-4{
+      display: block;
+      bottom: 0em;
+      left: calc(50% - 490px);
+    }
+  }
+  .event-2-kv{
+    height: 400px;
+    background-image: url(../images/event-2-kv-bg-m.png);
+    article{
+      background-image: unset;
+      picture{
+        source,
+        img{
+          max-width: 426px;
+        }
+      }
+    }
+  }
+  ul.keys{
+    li{
+      max-width: 45%;
+      .status-1,
+      .status-2,
+      .status-3{
+        font-size: 1.25rem;
+      }
+    }
+  }
+  ul.tasks{
+    > li{
+      max-width: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 450px) {
+  .event-1-kv{
+    .obj{
+      bottom: unset;
+    }
+    // 撲克牌士兵
+    .obj-1{
+      display: none;
+      left: unset;
+    }
+    // 精靈男
+    .obj-2{
+      display: unset;
+      bottom: 2em;
+      left: calc(50% - 480px);
+    }
+    // 愛麗絲
+    .obj-3{
+      bottom: 7em;
+      left: calc(50% - 80px);
+    }
+    // 沙拉醬
+    .obj-4{
+      display: none;
+      bottom: 7em;
+      left: calc(50% - 520px);
+    }
+  }
+  .event-2-kv{
+    height: 400px;
+    background-image: url(../images/event-2-kv-bg-m.png);
+    article{
+      background-image: url(../images/event-2-kv-m.png);
+    }
+  }
+  ul.tasks{
+    > li{
+      max-width: 300px;
+    }
+  }
+}
+@media only screen and (min-width: 460px) {
+   ul.keys{
+    li{
+      max-width: 280px;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  ul.reward {
+    flex-wrap: unset;
+    gap: 2em;
+    li {
+      max-width: 300px;
+    }
+  }
+}
+@media only screen and (min-width: 750px) {
+  .lager-english-name {
+    display: unset;
+  }
+  .event-1-kv{
+    article{
+      picture.event-1-title{
+        source,
+        img{
+          max-width: 738px;
+        }
+      }
+    }
+    .obj{
+      bottom: 0;
+    }
+    // 撲克牌士兵
+    .obj-1{
+      display: unset;
+      left: calc(50% - 800px);
+    }
+    // 精靈男
+    .obj-2{
+      display: unset;
+      left: calc(50% - 420px);
+    }
+    // 愛麗絲
+    .obj-3{
+      left: calc(50% - 50px);
+    }
+    // 沙拉醬
+    .obj-4{
+      display: unset;
+      left: calc(50% + 130px);
+    }
+  }
+  .event-2-kv{
+    height: 608px;
+    background-image: url(../images/event-2-kv-bg.png);
+    article{
+      background-image: url(../images/event-2-kv.png);
+      picture{
+        source,
+        img{
+          max-width: 737px;
+        }
+      }
+    }
+  }
+}
